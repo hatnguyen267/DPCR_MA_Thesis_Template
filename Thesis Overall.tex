@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt,oneside]{UUThesisTemplate}
+\usepackage[backend=biber,authordate-trad, noibid]{biblatex-chicago}
+\usepackage[colorlinks=true,citecolor=blue]{hyperref} 
+%To change the color of your hyperlinked citation, change it in ``citecolor''
+
+\addbibresource{References.bib}
+\usepackage{ifxetex}
+\usepackage{epigraph}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\usepackage{standalone}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{longtable}
+\newcolumntype{M}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{Q}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+%In case you'd like to create figures using tikz. 
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=2cm, minimum height=1cm,text centered, text width=2.5cm,draw=black, fill=black!30]
+\tikzstyle{process} = [rectangle, rounded corners, minimum width=2cm, minimum height=1cm, text centered, text width=2.5cm,draw=black, fill=orange!30]
+\tikzstyle{end} = [rectangle, rounded corners, minimum width=2cm, minimum height=1cm, text centered, text width=3cm,draw=black, fill=red!40]
+\tikzstyle{arrow} = [thick, ->, >=stealth]
+\newcommand{\chapquote}[3]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} - #2, \textit{#3}\end{flushright} }
+\newcommand{\chapquotea}[3]{\begin{quotation} \textit{#1} \end{quotation} \begin{flushright} - #2 \end{flushright} }
+
+
+%\ifxetex
+	% XeTeX specific packages and settings
+	% Language, diacritics and hyphenation
+	%\usepackage[babelshorthands]{polyglossia}
+	%\setmainlanguage{english}
+	%\setotherlanguages{swedish}
+
+	% Font settings
+	%\setmainfont{Times New Roman}
+	%\setromanfont{Times New Roman}
+	%\setsansfont{Arial}
+	%\setmonofont{Courier New}
+%\else
+	% Plain LaTeX specific packages and settings
+	% Language, diacritics and hyphenation
+    % Use English and Swedish languages. 
+	\usepackage[swedish,english]{babel} 
+
+	% Font settings
+	\usepackage{type1cm}
+	\usepackage[utf8]{inputenc}
+	\usepackage[T1]{fontenc}
+	\usepackage{mathptmx}
+	
+	% Enable scaling of images on import
+	\usepackage{graphicx}
+%\fi
+
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+
+
+\numberingdepth{subsection}
+\contentsdepth{subsection}
+
+
+
+\begin{document}
+%Front matter refers to the title page, dedication page, table of contents, etc. i.e. everything that goes before the start of your first chapter. 
+\frontmatter
+\frontmatterMonograph 
+	\title
+	\dedication{Some nice dedication words}
+ 	\tableofcontents
+	\listoftables
+	\listoffigures
+
+\chapter{Abstract}
+This is the abstract.
+
+\chapter{Acknowledgement}
+This is the acknowledgement.
+	
+%\begin{abstract}
+%The abstract goes into this page. 
+%\end{abstract}
+
+%\begin{acknowledgements}
+%The acknowledgements go here. 
+%\end{acknowledgements}
+    
+\mainmatter
+   
+	\input{tex/1_Introduction.tex}
+	\input{tex/2_LiteratureReview.tex}
+	\input{tex/3_Theory.tex}
+
+%and so on...
+
+\backmatter
+    % References
+    % No restriction is set to the reference styles
+    % Save your references in References.bib
+    %\nocite{*} % Remove this for your own citations
+	\printbibliography
+
+\end{document}
