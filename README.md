@@ -17,6 +17,7 @@ it for your thesis. I'm not an expert in LaTeX, but I will point you to
 some useful resources to help you get started. This includes a modified
 version of the UU thesis template, which should help you produce the
 department's formatting requirement without much tinkering.
+If you are already familiar with LaTex, just go ahead and download the `Thesis Overall.tex`, `UUThesisTemplate.cls`, and `References.bib` to the same folder. 
 
 The pros and cons of LaTeX
 ==========================
@@ -234,11 +235,11 @@ customized formatting to your documents. The UU Thesis Template is
 chockfull of its own commands, for instance. So if you are feeling
 adventurous, and you have not found an acceptable solution on Stack
 Exchange for what you have in mind, this is how you could go about
-owning this LaTeXbeast.
+owning this LaTeX beast.
 
 ### Converting between formats {#sssec:num2}
 
-A common complaint about LaTeXis that it does not faciliate
+A common complaint about LaTeX is that it does not faciliate
 collaboration among authors. Your end-product is almost always a `.pdf`
 file, which makes it difficult to comment on or highlight typographies.
 But, this is no longer a problem with Pandoc -- a document converter
