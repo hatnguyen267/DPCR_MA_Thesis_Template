@@ -181,7 +181,7 @@ you have tables that are longer than one page, or tables containing
 paragraphs. In these cases, consider the merits of the packages
 `tabular*`, `tabularx`, `tabulary`, and `longtable`.
 
-### Attaching graphics and diagrams {#sssec:num1}
+### Attaching graphics and diagrams
 
 For diagrams, `tikz` is common choice, but it is by no means the best
 choice. If you like coordinate geometry, perfect. If not, just create
@@ -237,7 +237,7 @@ adventurous, and you have not found an acceptable solution on Stack
 Exchange for what you have in mind, this is how you could go about
 owning this LaTeX beast.
 
-### Converting between formats {#sssec:num2}
+### Converting between formats
 
 A common complaint about LaTeX is that it does not faciliate
 collaboration among authors. Your end-product is almost always a `.pdf`
